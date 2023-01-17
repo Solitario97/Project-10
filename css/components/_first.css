@@ -1,6 +1,59 @@
-.main{
+.first__container{
+	position: relative;
+}
+.first{
 	height: 100vh;
 	min-height: 600px;
 	background: url("../../img/first-bg.jpg") center center / cover no-repeat;
+	color: var(--white-color);
+	padding-top: 223px;
+}
+.first__link{
+	background-color: rgb(28,46,61,0.4);
+	font-weight: 800;
+	font-size: 11px;
+	letter-spacing: 2px;
+	padding: 15px 30px;
+	border-radius: 100px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+.first__title{
+	margin-top: 40px;
+	font-weight: 700;
+	font-size: 80px;
+	line-height: 84px;
+	max-width: 634px;
+}
+.first__descr{
+	font-family: 'SFCompactText';
+	font-weight: 400;
+	margin-top: 40px;
+	font-size: 14px;
+	line-height: 17px;
+	max-width: 32%;
+}
+.first__btn{
+	margin-top: 60px;
+	font-family: 'SFProDisplay';
+	font-size: 12px;
+	letter-spacing: 2.18182px;
+	color: var(--white-color);
+	background-color: var(--accent-color);
+	padding: 33px 80px;
+	text-transform: uppercase;
+	border-radius: 8px;
+}
+.first__btn:hover{
+	background-color: var(--accent-hover-color);
+	border-radius: 100px;
+}
+.first__botom{
+	position: absolute;
+}
 
+
+.search-form__button{
+	max-width: 1066px;
+	max-height: 120px;
 }
