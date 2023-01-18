@@ -24,3 +24,13 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
+.section-title{
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 80px;
+	color: var(--dark-color);
+}
+.section-title--center{
+	text-align: center;
+	max-width: none;
+}
