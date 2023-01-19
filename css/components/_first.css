@@ -20,6 +20,9 @@
 	text-transform: uppercase;
 	display: inline-block;
 }
+.first__link:hover{                                    /* Почему не работает Ховер?????? */
+	background-color: var(--accent-hover-color);
+}
 .first__title{
 	margin-top: 40px;
 	font-weight: 700;
@@ -46,9 +49,8 @@
 	text-transform: uppercase;
 	border-radius: 8px;
 }
-.first__btn:hover{
-	background-color: var(--accent-hover-color);
-	border-radius: 100px;
+.first__:hover{
+	background-color: rgba(4, 10, 15, 0.4);
 }
 .first__botom{
 	position: absolute;
@@ -59,8 +61,6 @@
 	display: flex;
 	align-items: flex-end;
 }
-
-
 .search-form{
 	flex-shrink: 0;
 	width: 68%;
@@ -93,7 +93,6 @@
 	border-top-right-radius: 8px;
 	font-size: 0;
 }
-
 .main-slider__text{
 	height: 120px;
 	display: flex;
@@ -105,7 +104,6 @@
 	letter-spacing: 2.18182px;
 	text-transform: uppercase;
 }
-
 @media(max-height: 1079px){
 	.first__container{
 		padding: 120px 30px;

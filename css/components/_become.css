@@ -11,6 +11,7 @@
 	flex-wrap: wrap;
 }
 .become__item{
+	margin-top: 95px;
 	width: 23.5%;
 	margin-right: 2%;
 	overflow: hidden;
