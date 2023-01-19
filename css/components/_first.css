@@ -40,14 +40,8 @@
 }
 .first__btn{
 	margin-top: 60px;
-	font-family: 'SFProDisplay';
-	font-size: 12px;
-	letter-spacing: 2.18182px;
-	color: var(--white-color);
 	background-color: var(--accent-color);
 	padding: 33px 80px;
-	text-transform: uppercase;
-	border-radius: 8px;
 }
 .first__:hover{
 	background-color: rgba(4, 10, 15, 0.4);
