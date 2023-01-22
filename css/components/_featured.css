@@ -3,8 +3,8 @@
 	height: 1080px;
 	position: relative;
 }
-.futured__container{
-	padding: 604px 0 106px 0;
+.featured__container{
+	padding: 604px 0 106px 176px;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -27,7 +27,7 @@
 	font-size: 48px;
 	line-height: 64px;
 	color: #FFFFFF;
-	max-width: 40%;
+	max-width: 634px;
 }
 .blog-article__descr{
 	margin-top: 20px;

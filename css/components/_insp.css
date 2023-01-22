@@ -1,0 +1,9 @@
+.grid{
+	display: grid;
+}
+.insp__list{
+	gap: 32px;
+}
+.insp__item{
+	background: red;
+}
