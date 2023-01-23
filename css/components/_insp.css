@@ -74,10 +74,10 @@
 .insp__text{
 	position: absolute;
 	left: 0;
-	top: 0;
+	bottom: 0;
 	z-index: 5;
 	padding: 0 40px;
-	padding-top: 322px;
+	padding-bottom: 47px;
 }
 .insp__people{
 	display: flex;
@@ -109,4 +109,5 @@
 	font-family: 'SFProDisplay' sans-serif;
 	font-size: 32px;
 	color: #FFFFFF;
+	line-height: 40px;
 }
