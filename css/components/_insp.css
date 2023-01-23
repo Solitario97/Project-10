@@ -59,4 +59,54 @@
 	background: url("../../img/insp-7.jpg");
 }
 
-
+.insp__item--btn{
+	width: 64px;
+	height: 64px;
+	background: url("../../img/play.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 100%;
+	position: absolute;
+	left: 40px;
+	top: 40px;
+}
+.insp__text{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 5;
+	padding: 0 40px;
+	padding-top: 322px;
+}
+.insp__people{
+	display: flex;
+}
+.insp__people--item{
+	margin-top: 24px;
+	overflow: hidden;
+	border-radius: 100%;
+	border: 1px solid var(--white-color);
+	width: 48px;
+	height: 48px;
+	background: var(--white-color);
+	z-index: 3;
+	position: relative;
+}
+.insp__people--item:not(:first-child){
+	margin-left: -15px;
+	z-index: 2;
+}
+.insp__item--category{
+	font-family: 'SFProDisplay' sans-serif;
+	font-size: 10px;
+	letter-spacing: 1.1px;
+	text-transform: uppercase;
+	color: var(--white-color);
+}
+.insp__item--title{
+	margin-top: 10px;
+	font-family: 'SFProDisplay' sans-serif;
+	font-size: 32px;
+	color: #FFFFFF;
+}
