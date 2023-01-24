@@ -61,6 +61,11 @@
 	background-color: var(--neptune-color);
 	height: 64px;
 	margin-top: 16px;
+	transition: background-color 0.4s;
+}
+.subs-form__btn:hover{
+	background-color: var(--neptune-hover-color);
+	transition: background-color 0.4s;
 }
 .footer__bottom{
 	border-top: 1px solid #d9d9d9;

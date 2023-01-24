@@ -21,13 +21,16 @@
 	position: absolute;
 	right: 0;
 	top: 0;
+	transition: background-color 0.5s;
+}
+.burger:hover .burger__line{
+	background-color: var(--accent-color);
+	transition: background-color 0.5s;
 }
 .burger__line:last-child{
 	top: auto;
 	bottom: 0;
 }
-
-
 .header{
 	position: absolute;
 	left: 0;
@@ -54,6 +57,11 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	transition: opacity 0.3s;
+}
+.social__link:hover{
+	opacity: 0.8;
+	transition: opacity 0.3s;
 }
 .social__link--fb{
 	background: url("../../img/fb.svg");

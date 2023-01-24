@@ -38,10 +38,15 @@
 	max-width: 40%;
 }
 .blog-article__link{
-	background-color: var(--neptune-hover-color);
+	background-color: var(--neptune-color);
 	padding: 33px 78px;
 	margin-top: 40px;
 	display: inline-block;
+	transition: background-color 0.4s;
+}
+.blog-article__link:hover{
+	background-color: var(--neptune-hover-color);
+	transition: background-color 0.4s;
 }
 .featured__storis{
 	position: absolute;

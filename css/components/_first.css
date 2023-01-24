@@ -21,7 +21,7 @@
 	display: inline-block;
 }
 .first__link:hover{                                    /* Почему не работает Ховер?????? */
-	background-color: var(--accent-hover-color);
+	background-color: rgba(4, 10, 15, 0.4);
 }
 .first__title{
 	margin-top: 40px;
@@ -43,8 +43,8 @@
 	background-color: var(--accent-color);
 	padding: 33px 80px;
 }
-.first__:hover{
-	background-color: rgba(4, 10, 15, 0.4);
+.first__btn:hover{
+	background-color: var(--accent-hover-color);
 }
 .first__botom{
 	position: absolute;
