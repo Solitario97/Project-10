@@ -1,11 +1,21 @@
 
-let swiper1 =	document.querySelector(".slider-container");
+let swiper1 =	document.querySelector(".slider-container"),
+	burger	=	document.querySelector(".burger"),
+	close	=	document.querySelector(".menu__close"),
+	menu	=	document.querySelector(".menu");
 
-
-let swiper = new Swiper(".slider-container", {
+let swiper = new Swiper (swiper1, {
 	centeredSlides: true,
 	slidesPerView: "auto",
 	loop: true,
 	spaceBetween: 105,
 });
 
+burger.addEventListener("click", () =>{
+  menu.classList.add("menu--visible"),
+	burger.classList.add("burger--hidden");
+});
+close.addEventListener("click", () =>{
+	menu.classList.remove("menu--visible"),
+	burger.classList.remove("burger--hidden");
+  });
