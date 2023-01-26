@@ -98,6 +98,44 @@
 	letter-spacing: 2.18182px;
 	text-transform: uppercase;
 }
+.first__slider-btn{
+	position: absolute;
+	left: 50px;
+	bottom: 53px;
+	width: 14px;
+	height: 14px;
+	z-index: 2000;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.btn-right{
+	left: auto;
+	right: 50px;
+	background-image: url("../../img/arrow-right.svg");
+}
+.btn-left{
+	background-image: url("../../img/arrow-left.svg");
+}
+.main-slider__media{
+	max-height: 275px
+}
+.main-slider__play{
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	transform: translate(-50%, -60%);
+	width: 32px;
+	height: 41.14px;
+	background: url("../../img/play-2.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 50;
+}
+
+
+
 @media(max-height: 1079px){
 	.first__container{
 		padding: 120px 30px;

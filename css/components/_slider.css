@@ -1,3 +1,7 @@
+.swiper-container{
+	position: relative;
+}
+
 .slider-container{
 	overflow-x: hidden;
 	width: 100%;
@@ -7,7 +11,7 @@
 .featured-videos{
 	padding-top: 150px;
 }
-.swiper-slide{
+.slider-container .swiper-slide{
 	position: relative;
 	background: #e3e3e3;
 	border-radius: 8px;
@@ -21,7 +25,7 @@
 	justify-content: flex-end;
 	overflow: hidden;
 }
-.swiper-slide::after{
+.slider-container .swiper-slide::after{
 	content: "";
 	position: absolute;
 	left: 0;
@@ -33,11 +37,11 @@
 	opacity: 0;
 	transition: opacity 0.3s;
 }
-.swiper-slide-active{
+.slider-container .swiper-slide-active{
 	transform: scaleX(1.16) scaleY(1.2);
 	transition: transform 0.3s;
 }
-.swiper-slide-active::after{
+.slider-container .swiper-slide-active::after{
 	opacity: 1;
 	transition: opacity 0.3s;
 }
