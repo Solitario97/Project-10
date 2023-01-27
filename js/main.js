@@ -4,7 +4,8 @@ let swiper1 =	document.querySelector(".slider-container"),
 		burger	=	document.querySelector(".burger"),
 		close		=	document.querySelector(".menu__close"),
 		menu		=	document.querySelector(".menu"),
-		playButtonsFirst	=	document.querySelectorAll(".main-slider__play");
+		playButtonsFirst	=	document.querySelectorAll(".main-slider__play"),
+		playButtonsSlide	=	document.querySelectorAll(".slide-play");
 
 let swiperSlider2 = new Swiper (swiper2, {
 	centeredSlides: true,
@@ -31,23 +32,6 @@ swiperSlider2.on("transitionEnd", function ()	{
 		el.style.display	=	"block";
 	});
 });
-
-let swiperSlider1 = new Swiper (swiper1, {
-	centeredSlides: true,
-	slidesPerView: "auto",
-	loop: true,
-	spaceBetween: 105,
-});
-
-burger.addEventListener("click", () =>{
-  menu.classList.add("menu--visible"),
-	burger.classList.add("burger--hidden");
-});
-close.addEventListener("click", () =>{
-	menu.classList.remove("menu--visible"),
-	burger.classList.remove("burger--hidden");
-  });
-
 playButtonsFirst.forEach((el) => {
 	el.addEventListener('click', (e) => {
 		let video = e.currentTarget.closest('.main-slider__media').querySelector('video');
@@ -57,6 +41,47 @@ playButtonsFirst.forEach((el) => {
 			video.volume = 0.5;
 		}, 1000);
 	});
+});
+
+
+let swiperSlider1 = new Swiper (swiper1, {
+	centeredSlides: true,
+	slidesPerView: "auto",
+	loop: true,
+	spaceBetween: 105,
+
+});
+
+swiperSlider1.on("transitionEnd", function ()	{
+	let videos	=	document.querySelectorAll(".swiper-wrapper video");
+	videos.forEach((el)	=>	{
+		el.pause();
+		el.currentTime = 0;
+	})
+	playButtonsSlide.forEach((el)	=>	{
+		el.style.display	=	"block";
+	});
+});
+playButtonsSlide.forEach((el) => {
+	el.addEventListener('click', (e) => {
+		let video = e.currentTarget.closest('.swiper-slide').querySelector('video');
+		video.play();
+		e.currentTarget.style.display = 'none';
+		setTimeout(() => {
+			video.volume = 0.5;
+		}, 1000);
+	});
+});
+
+
+
+burger.addEventListener("click", () =>{
+  menu.classList.add("menu--visible"),
+	burger.classList.add("burger--hidden");
+});
+close.addEventListener("click", () =>{
+	menu.classList.remove("menu--visible"),
+	burger.classList.remove("burger--hidden");
 });
 
 
