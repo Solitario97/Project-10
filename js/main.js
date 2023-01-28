@@ -124,5 +124,9 @@ let validateForms = function(selector, rules) {
 	});
 };
 
+var audio=document.querySelector("audio");
+audio.volume=0.3;
+
+
 validateForms('.newsletter__form', { email: { required: true, email: true }, tel: { required: true } });
 validateForms('.subs-form', { email: { required: true, email: true } });
